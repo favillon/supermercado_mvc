@@ -4,11 +4,7 @@
  */
 package supermercado;
 
-
-import supermercado.Controllers.CustomerController;
-import supermercado.Controllers.CategoryController;
-
-import supermercado.Views.CustomerListView;
+import supermercado.Controllers.Init;
 /**
  *
  * @author user
@@ -19,12 +15,9 @@ public class Supermercado {
      * @param args the command line arguments
      */
     public static void main(String[] args) {        
-        System.out.println("Aplicacion Supermercado");        
-                
-        CustomerListView ventana = new CustomerListView();
-        System.out.println("Mostrar Ventana"); 
-        ventana.setLocationRelativeTo(null);
-        ventana.show();
+        System.out.println("Aplicacion Supermercado");
+        Init inicioApp = new Init();
+        inicioApp.runApp();
     }
     
 }

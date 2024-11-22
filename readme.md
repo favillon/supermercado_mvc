@@ -14,6 +14,7 @@ Aplicacion  en `Java` para consultar y filtrar clientes por categoria realizada 
 Java version 
 
 ```shell
+java --version
 openjdk 23.0.1 2024-10-15
 OpenJDK Runtime Environment (build 23.0.1+11-39)
 OpenJDK 64-Bit Server VM (build 23.0.1+11-39, mixed mode, sharing)
@@ -30,7 +31,7 @@ Docker - Docker-compose
 docker --version && docker-compose -v
 Docker version 27.3.1, build ce12230
 Docker Compose version 2.30.3
-```shell
+```
 
 
 JDBC
@@ -99,4 +100,8 @@ Ya activa la BD proceder a ejecutar la aplicacion `/src/supermercado/Supermercad
 
 ## Visualizacion APP
 
+### App
 ![App](./img/app.png)
+
+### Error de data
+![Error](./img/error.png)

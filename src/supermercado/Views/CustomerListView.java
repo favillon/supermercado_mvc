@@ -4,9 +4,7 @@
  */
 package supermercado.Views;
 
-import supermercado.Controllers.CategoryController;
 import supermercado.Controllers.CustomerController;
-
 
 import java.util.ArrayList;
 import java.util.List;
@@ -128,9 +126,6 @@ public class CustomerListView extends javax.swing.JFrame {
     }//GEN-LAST:event_comboCategoryActionPerformed
 
     private void formComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_formComponentShown
-        // TODO add your handling code here:
-        customers = CustomerController.allCustomer();        
-        categories  = CategoryController.allCategory();
         System.out.println("Datos de la Vista");       
         loadCategoryJcombox(comboCategory, categories);
         loadCustomerJTable(jTableCustomer, customers);
@@ -162,6 +157,11 @@ public class CustomerListView extends javax.swing.JFrame {
     private javax.swing.JLabel labelSelectCategory;
     // End of variables declaration//GEN-END:variables
 
+    public void loadDataInitial(List<Category> dataCategory, List<Customer>  dataCustomers) {
+        customers  = dataCustomers;        
+        categories = dataCategory;
+    }
+    
     private void loadCategoryJcombox(JComboBox c, List<Category> categories) {
         DefaultComboBoxModel combo = new DefaultComboBoxModel();
         c.setModel(combo);
