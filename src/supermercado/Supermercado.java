@@ -22,7 +22,8 @@ public class Supermercado {
         System.out.println("Aplicacion Supermercado");        
                 
         CustomerListView ventana = new CustomerListView();
-        System.out.println("Mostrar Ventana");        
+        System.out.println("Mostrar Ventana"); 
+        ventana.setLocationRelativeTo(null);
         ventana.show();
     }
     

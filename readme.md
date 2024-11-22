@@ -97,5 +97,6 @@ mysql> select version();
 
 Ya activa la BD proceder a ejecutar la aplicacion `/src/supermercado/Supermercado.java`
 
+## Visualizacion APP
 
-
+![App](./img/app.png)
