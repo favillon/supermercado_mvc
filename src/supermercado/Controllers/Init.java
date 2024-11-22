@@ -30,7 +30,7 @@ public class Init {
             ventana.setTitle("Mis Cliente");
                 
             ventana.loadDataInitial(categories, customers);
-            ventana.show();
+            ventana.setVisible(true);
             
         } else {
             ErrorView ventana = new ErrorView();
@@ -38,7 +38,7 @@ public class Init {
             ventana.setTitle("Error");
             ventana.jLabel1.setText("Sin data, Carga informacion de Clientes y Categorias");
             ventana.setLocationRelativeTo(null);
-            ventana.show();
+            ventana.setVisible(true);
         }
     }
 }
