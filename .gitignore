@@ -1,0 +1,16 @@
+.DS_Store
+# Directorios compilados
+target/
+build/
+nbproject/
+
+# Archivos de configuración específicos de IDE
+.idea/
+*.iml
+
+# Archivos temporales
+*.tmp
+*.swp
+
+# Archivos de documentación generados
+docs/
